@@ -1,0 +1,363 @@
+2023-12-15 14:56:17 [INFO] Question: Which are the 5 happiest countries?
+2023-12-15 14:56:18 [INFO] Running PandasAI with openai LLM...
+2023-12-15 14:56:18 [INFO] Prompt ID: 328e80d2-b669-49c2-aa9d-2d082bef60a7
+2023-12-15 14:56:18 [INFO] Executing Step 0: CacheLookup
+2023-12-15 14:56:18 [INFO] Executing Step 1: PromptGeneration
+2023-12-15 14:56:18 [INFO] Using prompt: <dataframe>
+dfs[0]:185x7
+SKU,Product ID,Name,Subcategory,Weight (g),Price ($),Category
+SKU01102,PROD011,Whole Wheat Bread,Bread,250.0,2.5,Bakery
+SKU01103,PROD011,Whole Wheat Bread,Bread,500.0,5.0,Bakery
+SKU01101,PROD011,Whole Wheat Bread,Bread,100.0,1.0,Bakery
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Which are the 5 happiest countries?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-15 14:56:18 [INFO] Executing Step 2: CodeGenerator
+2023-12-15 14:56:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2023-12-15 14:56:19 [INFO] Retrying request to /chat/completions in 0.813013 seconds
+2023-12-15 14:56:20 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2023-12-15 14:56:20 [INFO] Retrying request to /chat/completions in 1.513827 seconds
+2023-12-15 14:56:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2023-12-15 14:56:21 [ERROR] Pipeline failed on step 2: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2023-12-15 14:56:43 [INFO] Question: Which are the 5 most selling SKU?
+2023-12-15 14:56:43 [INFO] Running PandasAI with openai LLM...
+2023-12-15 14:56:43 [INFO] Prompt ID: e55a28c9-e63b-45a3-bdb3-cbcfaea42631
+2023-12-15 14:56:43 [INFO] Executing Step 0: CacheLookup
+2023-12-15 14:56:43 [INFO] Executing Step 1: PromptGeneration
+2023-12-15 14:56:43 [INFO] Using prompt: <dataframe>
+dfs[0]:185x7
+SKU,Product ID,Name,Subcategory,Weight (g),Price ($),Category
+SKU01102,PROD011,Whole Wheat Bread,Bread,250.0,2.5,Bakery
+SKU01103,PROD011,Whole Wheat Bread,Bread,500.0,5.0,Bakery
+SKU01101,PROD011,Whole Wheat Bread,Bread,100.0,1.0,Bakery
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Which are the 5 most selling SKU?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-15 14:56:43 [INFO] Executing Step 2: CodeGenerator
+2023-12-15 14:56:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2023-12-15 14:56:43 [INFO] Retrying request to /chat/completions in 0.815541 seconds
+2023-12-15 14:56:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2023-12-15 14:56:44 [INFO] Retrying request to /chat/completions in 1.752788 seconds
+2023-12-15 14:56:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2023-12-15 14:56:46 [ERROR] Pipeline failed on step 2: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2023-12-15 17:26:29 [INFO] Question: Which are the 5 most selling SKU?
+2023-12-15 17:26:29 [INFO] Running PandasAI with starcoder LLM...
+2023-12-15 17:26:29 [INFO] Prompt ID: 3754346d-6a45-44f3-82e4-f965616290c4
+2023-12-15 17:26:29 [INFO] Executing Step 0: CacheLookup
+2023-12-15 17:26:29 [INFO] Executing Step 1: PromptGeneration
+2023-12-15 17:26:29 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x7
+Date_Time,Order_Id,SKU,Quantity,Unit_Price ($),Discount (%),Total_Price ($)
+2021-01-13 19:00:00,2021-01-13_131,SKU09401,1,1,2,0.98
+2021-01-10 11:00:00,2021-01-10_71,SKU09401,1,1,2,0.98
+2021-01-11 18:00:00,2021-01-11_113,SKU09101,1,1,2,0.98
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Which are the 5 most selling SKU?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-15 17:26:29 [INFO] Executing Step 2: CodeGenerator
+2023-12-15 17:26:29 [ERROR] Pipeline failed on step 2: 'Starcoder' object has no attribute 'api_token'
+2023-12-15 17:28:04 [INFO] Question: Which are the 5 most selling SKU?
+2023-12-15 17:28:04 [INFO] Running PandasAI with starcoder LLM...
+2023-12-15 17:28:04 [INFO] Prompt ID: dc79a2b1-f55c-46d0-9113-888be7c6b65b
+2023-12-15 17:28:04 [INFO] Executing Step 0: CacheLookup
+2023-12-15 17:28:04 [INFO] Executing Step 1: PromptGeneration
+2023-12-15 17:28:04 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x7
+Date_Time,Order_Id,SKU,Quantity,Unit_Price ($),Discount (%),Total_Price ($)
+2021-01-13 19:00:00,2021-01-13_131,SKU09401,1,1,2,0.98
+2021-01-11 18:00:00,2021-01-11_113,SKU09101,1,1,2,0.98
+2021-01-10 11:00:00,2021-01-10_71,SKU09401,1,1,2,0.98
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Which are the 5 most selling SKU?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-15 17:28:04 [INFO] Executing Step 2: CodeGenerator
+2023-12-15 17:28:04 [ERROR] Pipeline failed on step 2: 'Starcoder' object has no attribute 'api_token'
+2023-12-18 17:17:58 [INFO] Question: number of rows
+2023-12-18 17:18:01 [INFO] Running PandasAI with google-palm LLM...
+2023-12-18 17:18:01 [INFO] Prompt ID: 9c614f26-80f1-42d8-bbfa-cefb2dd1746a
+2023-12-18 17:18:01 [INFO] Executing Step 0: CacheLookup
+2023-12-18 17:18:01 [INFO] Executing Step 1: PromptGeneration
+2023-12-18 17:18:02 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x7
+Date_Time,Order_Id,SKU,Quantity,Unit_Price ($),Discount (%),Total_Price ($)
+2021-01-11 18:00:00,2021-01-11_113,SKU09101,1,1,2,0.98
+2021-01-10 11:00:00,2021-01-10_71,SKU09401,1,1,2,0.98
+2021-01-13 19:00:00,2021-01-13_131,SKU09401,1,1,2,0.98
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: number of rows
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-18 17:18:02 [INFO] Executing Step 2: CodeGenerator
+2023-12-18 17:18:04 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+result = { "type": "number", "value": len(dfs[0]) }
+            ```
+            
+2023-12-18 17:18:04 [INFO] Executing Step 3: CachePopulation
+2023-12-18 17:18:04 [INFO] Executing Step 4: CodeExecution
+2023-12-18 17:18:04 [INFO] Saving charts to D:\PK - karthi\Projects\Hana - Table Analysis\exports\charts\temp_chart.png
+2023-12-18 17:18:04 [INFO] 
+Code running:
+```
+result = {'type': 'number', 'value': len(dfs[0])}
+        ```
+2023-12-18 17:18:04 [INFO] Executing Step 5: ResultValidation
+2023-12-18 17:18:04 [INFO] Answer: {'type': 'number', 'value': 10000}
+2023-12-18 17:18:04 [INFO] Executed in: 6.1300201416015625s
+2023-12-18 17:18:04 [INFO] Executing Step 6: ResultParsing
+2023-12-18 17:37:34 [INFO] Question: Which Order Id repeate more times?
+2023-12-18 17:37:34 [INFO] Running PandasAI with google-palm LLM...
+2023-12-18 17:37:34 [INFO] Prompt ID: 345085e8-e03b-4015-bb53-1bf61721cb52
+2023-12-18 17:37:34 [INFO] Executing Step 0: CacheLookup
+2023-12-18 17:37:34 [INFO] Executing Step 1: PromptGeneration
+2023-12-18 17:37:34 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x7
+Date_Time,Order_Id,SKU,Quantity,Unit_Price ($),Discount (%),Total_Price ($)
+2021-01-13 19:00:00,2021-01-13_131,SKU09401,1,1,2,0.98
+2021-01-11 18:00:00,2021-01-11_113,SKU09101,1,1,2,0.98
+2021-01-10 11:00:00,2021-01-10_71,SKU09401,1,1,2,0.98
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: Which Order Id repeate more times?
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-18 17:37:34 [INFO] Executing Step 2: CodeGenerator
+2023-12-18 17:37:37 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+result = { "type": "string", "value": f"The most frequent Order Id is {dfs[0]['Order_Id'].value_counts().idxmax()}." }
+            ```
+            
+2023-12-18 17:37:37 [INFO] Executing Step 3: CachePopulation
+2023-12-18 17:37:37 [INFO] Executing Step 4: CodeExecution
+2023-12-18 17:37:37 [INFO] Saving charts to D:\PK - karthi\Projects\Hana - Table Analysis\exports\charts\temp_chart.png
+2023-12-18 17:37:37 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': f"The most frequent Order Id is {dfs[0]['Order_Id'].value_counts().idxmax()}."}
+        ```
+2023-12-18 17:37:37 [INFO] Executing Step 5: ResultValidation
+2023-12-18 17:37:37 [INFO] Answer: {'type': 'string', 'value': 'The most frequent Order Id is 2022-05-16_137.'}
+2023-12-18 17:37:37 [INFO] Executed in: 2.9971227645874023s
+2023-12-18 17:37:37 [INFO] Executing Step 6: ResultParsing
+2023-12-18 17:38:31 [INFO] Question: Which Order Id repeate more times?
+2023-12-18 17:38:31 [INFO] Running PandasAI with google-palm LLM...
+2023-12-18 17:38:31 [INFO] Prompt ID: f3d281a5-89f9-4212-bc27-839a77233d51
+2023-12-18 17:38:31 [INFO] Executing Step 0: CacheLookup
+2023-12-18 17:38:31 [INFO] Using cached response
+2023-12-18 17:38:31 [INFO] Executing Step 1: PromptGeneration
+2023-12-18 17:38:31 [INFO] Executing Step 2: CodeGenerator
+2023-12-18 17:38:31 [INFO] Executing Step 3: CachePopulation
+2023-12-18 17:38:31 [INFO] Executing Step 4: CodeExecution
+2023-12-18 17:38:31 [INFO] Saving charts to D:\PK - karthi\Projects\Hana - Table Analysis\exports\charts\temp_chart.png
+2023-12-18 17:38:31 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': f"The most frequent Order Id is {dfs[0]['Order_Id'].value_counts().idxmax()}."}
+        ```
+2023-12-18 17:38:31 [INFO] Executing Step 5: ResultValidation
+2023-12-18 17:38:31 [INFO] Answer: {'type': 'string', 'value': 'The most frequent Order Id is 2022-05-16_137.'}
+2023-12-18 17:38:31 [INFO] Executed in: 0.2783777713775635s
+2023-12-18 17:38:31 [INFO] Executing Step 6: ResultParsing
+2023-12-18 17:40:17 [INFO] Question: Which Order Id repeate more times?
+2023-12-18 17:40:17 [INFO] Running PandasAI with google-palm LLM...
+2023-12-18 17:40:17 [INFO] Prompt ID: 63f591ad-604f-4f37-a768-1f2aacde448f
+2023-12-18 17:40:17 [INFO] Executing Step 0: CacheLookup
+2023-12-18 17:40:17 [INFO] Using cached response
+2023-12-18 17:40:17 [INFO] Executing Step 1: PromptGeneration
+2023-12-18 17:40:17 [INFO] Executing Step 2: CodeGenerator
+2023-12-18 17:40:17 [INFO] Executing Step 3: CachePopulation
+2023-12-18 17:40:17 [INFO] Executing Step 4: CodeExecution
+2023-12-18 17:40:17 [INFO] Saving charts to D:\PK - karthi\Projects\Hana - Table Analysis\exports\charts\temp_chart.png
+2023-12-18 17:40:17 [INFO] 
+Code running:
+```
+result = {'type': 'string', 'value': f"The most frequent Order Id is {dfs[0]['Order_Id'].value_counts().idxmax()}."}
+        ```
+2023-12-18 17:40:17 [INFO] Executing Step 5: ResultValidation
+2023-12-18 17:40:17 [INFO] Answer: {'type': 'string', 'value': 'The most frequent Order Id is 2022-05-16_137.'}
+2023-12-18 17:40:17 [INFO] Executed in: 0.11873984336853027s
+2023-12-18 17:40:17 [INFO] Executing Step 6: ResultParsing
+2023-12-18 17:40:39 [INFO] Question: mean of price
+2023-12-18 17:40:39 [INFO] Running PandasAI with google-palm LLM...
+2023-12-18 17:40:39 [INFO] Prompt ID: 6a8cde87-e3b0-411b-811d-637a65848c53
+2023-12-18 17:40:39 [INFO] Executing Step 0: CacheLookup
+2023-12-18 17:40:39 [INFO] Executing Step 1: PromptGeneration
+2023-12-18 17:40:39 [INFO] Using prompt: <dataframe>
+dfs[0]:10000x7
+Date_Time,Order_Id,SKU,Quantity,Unit_Price ($),Discount (%),Total_Price ($)
+2021-01-10 11:00:00,2021-01-10_71,SKU09401,1,1,2,0.98
+2021-01-11 18:00:00,2021-01-11_113,SKU09101,1,1,2,0.98
+2021-01-13 19:00:00,2021-01-13_131,SKU09401,1,1,2,0.98
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+```
+
+Q: mean of price
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+
+
+Generate python code and return full updated code:
+2023-12-18 17:40:39 [INFO] Executing Step 2: CodeGenerator
+2023-12-18 17:40:41 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+result = { "type": "number", "value": dfs[0]["Total_Price ($)"].mean() }
+            ```
+            
+2023-12-18 17:40:41 [INFO] Executing Step 3: CachePopulation
+2023-12-18 17:40:41 [INFO] Executing Step 4: CodeExecution
+2023-12-18 17:40:41 [INFO] Saving charts to D:\PK - karthi\Projects\Hana - Table Analysis\exports\charts\temp_chart.png
+2023-12-18 17:40:41 [INFO] 
+Code running:
+```
+result = {'type': 'number', 'value': dfs[0]['Total_Price ($)'].mean()}
+        ```
+2023-12-18 17:40:41 [INFO] Executing Step 5: ResultValidation
+2023-12-18 17:40:41 [INFO] Answer: {'type': 'number', 'value': 0.9800000000000003}
+2023-12-18 17:40:41 [INFO] Executed in: 2.4458093643188477s
+2023-12-18 17:40:41 [INFO] Executing Step 6: ResultParsing
