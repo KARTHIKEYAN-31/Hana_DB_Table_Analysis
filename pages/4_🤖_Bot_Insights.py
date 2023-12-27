@@ -25,7 +25,7 @@ key_mode = st.sidebar.selectbox('Google GenAI API KEY input Mode: ',('Upload Own
 if key_mode == 'Upload Own Key':
     api_key = st.sidebar.text_input("Enter OpenAI API Key", type="password" )
 else:
-    api_key = 'AIzaSyAqhmBCA_rx-1skg6LRY1lIVSobMHG4EDs'
+    api_key = st.secrets["API_KEY"]
 
 
 if st.session_state.connection is None:
