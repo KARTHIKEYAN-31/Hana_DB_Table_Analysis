@@ -28,8 +28,12 @@ else:
     api_key = 'AIzaSyAqhmBCA_rx-1skg6LRY1lIVSobMHG4EDs'
 
 
-if st.session_state.Table == 'Select Table':
+if st.session_state.connection is None:
+    st.warning('No connection found. Please upload the connection key first.', icon="⚠️")
+
+elif st.session_state.DF is None:
     st.warning('No table selected. Please select the table first.', icon="⚠️")
+    
 elif len(api_key) <1:
     st.warning('Please enter your OpenAI API key.', icon="⚠️")
 else:

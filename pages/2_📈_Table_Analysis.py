@@ -12,7 +12,10 @@ st.set_page_config(page_title="Analysis", page_icon="📈", layout="wide")
 
 st.header('HANA - DB ANALYSIS')
 
-if st.session_state.Table == 'Select Table':
+if st.session_state.connection is None:
+    st.warning('No connection found. Please upload the connection key first.', icon="⚠️")
+
+elif st.session_state.DF is None:
     st.warning('No table selected. Please select the table first.', icon="⚠️")
 
 else:
