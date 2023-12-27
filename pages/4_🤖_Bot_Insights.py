@@ -42,10 +42,10 @@ else:
     prompt_list = ['Hi']
     answer_list = ['Hello, I am a Maven-Bot. How can I help you?']
     st.session_state.prompt = 'Which Order Id repeate more times?'
-    '''with st.container(border=True):
-        for i in range(0,len(prompt_list)):
-            st.markdown(f'<h6 style="text-align: Right;">{prompt_list[i]}</h6>', unsafe_allow_html=True)
-            st.markdown(f'<h6 style="text-align: Left;">{answer_list[i]}</h6>', unsafe_allow_html=True)'''
+    # '''with st.container(border=True):
+    #     for i in range(0,len(prompt_list)):
+    #         st.markdown(f'<h6 style="text-align: Right;">{prompt_list[i]}</h6>', unsafe_allow_html=True)
+    #         st.markdown(f'<h6 style="text-align: Left;">{answer_list[i]}</h6>', unsafe_allow_html=True)'''
 
     prompt = st.text_input("Enter prompt:", st.session_state.prompt)
     response = df.chat(prompt)
